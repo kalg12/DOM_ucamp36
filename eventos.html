@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Práctica con DOM</title>
+    <title>Eventos con DOM</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -60,39 +60,72 @@
     </nav>
 
     <main class="container mt-5">
-      <h1 id="demostracion">Práctica con DOM</h1>
+      <h1>Eventos con DOM</h1>
 
       <hr />
 
-      <p id="parrafo">Texto original</p>
-      <button id="btnCambiar" type="button" class="btn btn-warning">
-        Cambiar texto
+      <button class="btn btn-primary" id="btnEjemplo1">
+        Ejemplo 1 - Click
       </button>
 
-      <!-- Agregaremos un h2 desde JS -->
-      <h2 id="titulo"></h2>
-      <button id="btnAgregarTitulo" type="button" class="btn btn-primary">
-        Agregar título
-      </button>
-      <button id="btnEliminarTitulo" type="button" class="btn btn-danger">
-        Eliminar el título
+      <button class="btn btn-primary" id="btnEjemplo2">
+        Ejemplo 2 - Mouseover
       </button>
 
-      <!-- Vamos a modificar cosas con CSS -->
-      <h2 class="titulo-rojo" id="tituloRojo">
-        Este es un titulo de color rojo
-      </h2>
-      <button type="button" id="btnCambiarColor" class="btn btn-info">
-        Cambiar color
+      <button class="btn btn-primary" id="btnEjemplo3">
+        Ejemplo 3 - Doble click
       </button>
 
-      <!-- Voy a crear el botón para acceder a el mediante clase y no por id -->
-      <button class="btn btn-secondary btnCambiante" type="button">
-        Botón que va a cambiar de color
+      <button class="btn btn-primary" id="btnEjemplo4">
+        Ejemplo 4 - KeyDown
       </button>
+
+      <section class="mt-5">
+        <!-- Formulario que pide Nombre, Correo y Mensjae -->
+        <h1>Formulario de contacto</h1>
+        <form id="formularioDeContacto">
+          <label for="nombre">Nombre</label>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Escribe tu nombre"
+              required
+              name="nombre"
+              id="nombre"
+            />
+          </div>
+          <label for="correo">Correo Electrónico</label>
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Escribe tu correo"
+              required
+              name="correo"
+              id="correo"
+            />
+          </div>
+
+          <label for="mensaje">Envia tu mensaje</label>
+          <div class="input-group mb-3">
+            <textarea
+              type="text"
+              class="form-control"
+              placeholder="Escribe tu mensaje aquí"
+              required
+              name="mensaje"
+              id="mensaje"
+            >
+            </textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
     </main>
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/eventos.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

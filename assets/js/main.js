@@ -45,3 +45,11 @@ const btnCambiarColor = document.getElementById("btnCambiarColor");
 btnCambiarColor.addEventListener("click", () => {
   tituloRojo.style.color = "#0e11b6";
 });
+
+/* Vamos a cambiar el color de un texto mediante el estilo CSS con el metodo getElementsByClassName()	  */
+const btnCambiarColorClase = document.getElementsByClassName("btnCambiante");
+/* Al dar click este botón tiene que mostrar un alerta*/
+btnCambiarColorClase.addEventListener("click", () => {
+  alert("Has dado click al botón de la clase btnCambiante");
+  console.log("Has dado click al botón de la clase btnCambiante");
+});
